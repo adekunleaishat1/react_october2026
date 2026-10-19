@@ -12,12 +12,13 @@ const todo = (e) => {
 
 const handleclick = () =>{
     setcontent([...content, user])
+    setuser("")
 }
 
   return (
     <>
     <div>Todo</div>
-    <input type="text" onChange={todo}/>
+    <input value={user} type="text" onChange={todo}/>
     <button onClick={handleclick}>Update</button>
     <h1>this is second react class {user}</h1>
     {content.map((el , i)=>{
