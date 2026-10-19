@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Home from './Home.jsx'
 import Landing from './Landing.jsx'
 import Usestateclass from './Usestateclass.jsx'
+import Todo from './Todo.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')).render(
     {/* <App />
     <Home></Home> */}
     {/* <Landing/> */}
-    <Usestateclass/>
+    {/* <Usestateclass/> */}
+    <Todo/>
   </StrictMode>,
 )
