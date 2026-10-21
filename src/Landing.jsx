@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import Button from './props/Button'
 // import { useState } from 'react'
 
 const Landing = () => {
@@ -14,16 +15,24 @@ const Landing = () => {
     setusername("Tola")
     setuser({...user , name:"Shina"})
   }
-
+  const handlesignup = () =>{
+    console.log( "A user is trying to register");
+    
+  }
   return (
     <div>
       <h1>This is Landing page</h1>
       <p>{gender}</p>
       <p>{userobj.name}</p>
       {/* <button onClick={()=> handleclick("hello")}>click</button> */}
-      <button onClick={handleclick}>click</button> 
+      {/* <button onClick={handleclick}>click</button>  */}
+       <Button text="click" onclick={handleclick}/>
       <h1>{username}</h1>
       <h3>My name is {user.name}, i am {user.age} year old studing a tech course at {user.school}.</h3>
+      <Button text="Loading" onclick={()=> alert("loading...")}/>
+      <Button text="Signup" onclick = {handlesignup}/>
+      <Button text="Login"/>
+     
     </div>
   )
 }

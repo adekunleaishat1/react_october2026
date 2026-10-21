@@ -12,8 +12,8 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App />
     <Home></Home> */}
-    {/* <Landing/> */}
+    <Landing/>
     {/* <Usestateclass/> */}
-    <Todo/>
+    {/* <Todo/> */}
   </StrictMode>,
 )
